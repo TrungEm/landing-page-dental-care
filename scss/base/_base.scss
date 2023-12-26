@@ -1,0 +1,17 @@
+@use '../abstracts/' as abs;
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: abs.$text-color-bold;
+    font-size: 1.6rem;
+    font-family: Sora, sans-serif;
+}
