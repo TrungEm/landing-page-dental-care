@@ -24,18 +24,66 @@
         <div id="root">
             <!-- Header -->
             <header class="header">
-                <div class="header__inner">
+                <div class="container">
                     <!-- Header top -->
                     <div class="header-top">
-                        <div class="logo">
+                        <a href="#!" class="logo">
                             <span class="logo__circle"></span>
                             <span class="logo__text">shine</span>
+                        </a>
+                        <nav class="navbar">
+                            <ul class="navbar__list">
+                                <span class="active-icon"></span>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__item--link active">Home</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__item--link">Services</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__item--link">About</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__item--link">Doctors</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="action">
+                            <button class="action__btn">
+                                <a href="#!" class="action__btn__login">Log in</a>
+                            </button>
+                            <button class="action__btn">
+                                <a href="#!" class="btn action__btn__register">Sign Up</a>
+                            </button>
                         </div>
                     </div>
 
                     <!-- Hero -->
                     <section class="hero">
-                        <section class="hero__content"></section>
+                        <section class="hero__content">
+                            <h1 class="hero__content__title">Exceptional dental care for all ages.</h1>
+                            <p class="hero__content__desc">
+                                Exceptional dental care for all ages. Your great smile begins with a great dentist.
+                            </p>
+                            <div class="hero__action hero__action--space">
+                                <button class="hero__action__btn">
+                                    <a href="#!" class="btn hero__btn--link">Book Online</a>
+                                </button>
+                                <span class="phone-number">or call (123) 456-7890</span>
+                            </div>
+                        </section>
+                        <section class="hero__img">
+                            <div class="hero__img__wrap">
+                                <img src="./assets/images/hero-img-1.png" class="hero__img--left" alt="" />
+                            </div>
+                            <div class="hero__img__wrap hero__img__wrap--small">
+                                <img
+                                    src="./assets/images/hero-img-2.png"
+                                    class="hero__img--right hero__img--location"
+                                    alt=""
+                                />
+                            </div>
+                        </section>
                     </section>
                 </div>
             </header>

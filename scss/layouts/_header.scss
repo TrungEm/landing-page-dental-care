@@ -1,0 +1,159 @@
+@use '../abstracts/' as abs;
+
+.header {
+    min-height: 100vh;
+    background-color: #10375c;
+
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+}
+
+.navbar {
+    &__list {
+        position: relative;
+        @include abs.flexCenter;
+    }
+
+    &__item + &__item {
+        margin-left: 42px;
+    }
+
+    &__item--link {
+        color: #c9d2da;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 175%;
+
+        &.active {
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+}
+
+.active-icon {
+    position: absolute;
+    left: -10px;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.action {
+    @include abs.flexCenter;
+
+    &__btn {
+        font-size: 1.6rem;
+        line-height: 175%;
+        background-color: transparent;
+        padding: 0;
+
+        + .action__btn {
+            margin-left: 28px;
+        }
+
+        &__login {
+            color: #c9d2da;
+            text-align: right;
+            font-weight: 300;
+        }
+
+        &__register {
+            font-size: 1.6rem;
+            padding: 8.73px 20px;
+        }
+    }
+}
+
+.hero {
+    @include abs.flexCenter;
+    justify-content: space-between;
+    margin-top: 76px;
+    margin-bottom: 110px;
+
+    &__content {
+        // max-width: 113px;
+
+        &__title {
+            color: #fff;
+            font-size: 7rem;
+            font-weight: 600;
+            line-height: 114.286%;
+            letter-spacing: -0.14rem;
+            max-width: 517px;
+        }
+
+        &__desc {
+            margin-top: 22px;
+            color: #c9d2da;
+            font-size: 1.8rem;
+            font-weight: 300;
+            line-height: 166.667%;
+            max-width: 468px;
+        }
+    }
+
+    &__action--space {
+        display: flex;
+        align-items: center;
+        margin-top: 38px;
+    }
+
+    &__btn--link {
+        padding-left: 53.44px;
+        padding-right: 53.5px;
+    }
+
+    .phone-number {
+        margin-left: 38px;
+        color: #fff;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 166.667%;
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+
+        &__wrap {
+            width: 330px;
+            height: 540px;
+            border-radius: 6px;
+            overflow: hidden;
+
+            &--small {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                width: 210px;
+                height: 410px;
+            }
+        }
+
+        &--right,
+        &--left {
+            width: 100%;
+            height: 540px;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        &--right {
+            width: 100%;
+            height: 410px;
+        }
+    }
+
+    &__img--left {
+    }
+
+    &__img--location {
+    }
+}
